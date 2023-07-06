@@ -1,0 +1,41 @@
+body{
+
+    /* colors */
+    --hue: 215;
+    --color-primary: var(--hue), 90%, 60%;
+    --color-primary-contrast: var(--hue), 90%, 65%;
+    --color-text: var(--hue), 90%, 15%;
+    --color-text-contrast: var(--hue), 90%, 20%;
+    --color-text-highlight: 40, 90%, 60%;
+    --color-backdrop: var(--hue), 90%, 15%;
+    --color-background: var(--hue), 70%, 100%;
+    --color-background-contrast: var(--hue), 20%, 98%;
+    --color-gray: var(--hue), 20%, 95%;
+    --color-gray-contrast: var(--hue), 20%, 90%;
+    background-color: hsl(var(--color-background));
+    color: hsl(var(--color-text));
+
+    /* fonts */
+    --font-sans: 'Poppins', Arial, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    font-family: var(--font-sans);
+
+}
+
+body.dark-mode{
+    --color-primary: var(--hue), 90%, 60%;
+    --color-primary-contrast: var(--hue), 90%, 65%;
+    --color-text: var(--hue), 90%, 15%;
+    --color-text-contrast: var(--hue), 90%, 20%;
+    --color-text-highlight: 40, 90%, 60%;
+    --color-backdrop: var(--hue), 90%, 15%;
+    --color-background: var(--hue), 70%, 100%;
+    --color-background-contrast: var(--hue), 20%, 98%;
+    --color-gray: var(--hue), 20%, 95%;
+    --color-gray-contrast: var(--hue), 20%, 90%;
+}
+
+pre,
+code{
+    font-family: var(--font-mono);
+}

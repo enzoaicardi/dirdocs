@@ -6,19 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dirdoc</title>
 
+    <link rel="stylesheet" href="./assets/css/globals.css">
+    <link rel="stylesheet" href="./assets/css/uno.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/flect/flect.js" defer></script>
     <script src="./components/bundle.js" type="module" defer></script>
 
 </head>
-<body>
+
+<body class="max-w-1280 w-full mx-auto h-screen">
     
-    <x-heading></x-heading>
-    <x-nav></x-nav>
-    <x-sidebar></x-sidebar>
+    <header class="flex h-64 border-b border-gray-contrast">
+
+        <a class="flex flex-none items-center px-24 gap-12 w-sidebar">
+            <img src="./assets/img/logo.svg" alt="Logo">
+            <h2>DirDocs</h2>
+        </a>
+
+        <div class="panel px-24 flex items-center gap-24">
+
+            <div class="search-input">
+                search
+            </div>
+
+            <div class="version-input mr-auto">
+                version
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="h-full flex">
+
+        <nav class="w-sidebar flex-none h-full border-r border-gray-contrast">
+
+            <div class="nav-item h-40 flex items-center justify-between px-24 border-b border-gray-contrast">
+                <p>Get started</p>
+                <p>></p>
+            </div>
+            <div class="nav-item font-light h-40 flex items-center justify-between px-24">
+                <p>Get started</p>
+            </div>
+            <div class="nav-item font-light h-40 flex items-center justify-between px-24">
+                <p>Get started</p>
+            </div>
+
+        </nav>
+
+        <section class="flex flex-col w-full">
+
+            <header class="flex flex-none items-center px-24 gap-24 h-40 border-b border-gray-contrast">
+                <a href="#">Titre de partie</a>
+                <a href="#">Autre partie</a>
+            </header>
+
+            <article id="content">
+
+            </article>
+
+        </section>
+
+    </main>
 
 </body>
 </html>
